@@ -2,7 +2,19 @@
 module.exports = {
 	content: ["./*.html"],
 	theme: {
-		extend: {},
+		screens: {
+			sm: "480px",
+			md: "768px",
+			lg: "976px",
+			xl: "1440px",
+		},
+		extend: {
+			fontFamily: {
+				Comfortaa: ["Comfortaa", "cursive"],
+				roboto: ["roboto", "sans-serif"],
+				// Playfair Display:["Playfair Display", "serif"],
+			},
+		},
 	},
 	plugins: [],
 };
